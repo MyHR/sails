@@ -1,0 +1,33 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.2
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:handlebars:20151207':
+    - express3-handlebars > handlebars:
+        reason: None given
+        expires: '2018-03-30T20:33:58.574Z'
+  'npm:validator:20160218':
+    - anchor > validator:
+        reason: None given
+        expires: '2018-03-30T20:33:58.575Z'
+    - waterline > anchor > validator:
+        reason: None given
+        expires: '2018-03-30T20:33:58.575Z'
+  'npm:validator:20180218':
+    - anchor > validator:
+        reason: None given
+        expires: '2018-03-30T20:33:58.575Z'
+    - waterline > anchor > validator:
+        reason: None given
+        expires: '2018-03-30T20:33:58.575Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - express3-handlebars > glob > minimatch:
+        patched: '2018-02-28T20:33:58.599Z'
+  'npm:semver:20150403':
+    - express3-handlebars > semver:
+        patched: '2018-02-28T20:33:58.599Z'
+  'npm:uglify-js:20151024':
+    - express3-handlebars > handlebars > uglify-js:
+        patched: '2018-02-28T20:33:58.599Z'
