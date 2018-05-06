@@ -30,7 +30,7 @@
   "dependencies": {
     "express": "3.4.3",
     "waterline": "0.10.0-rc14",
-    "rc": "~0.3.3",
+    "rc": "~1.2.7",
     "sails-stringfile": "~0.3.0",
     "async": "~0.2.9",
     "lodash": "~2.4.1",
